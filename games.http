@@ -1,0 +1,40 @@
+GET http://localhost:5129/games
+
+###
+
+GET http://localhost:5129/games/1
+
+###
+POST  http://localhost:5129/games
+Content-Type: application/json
+
+{
+  "name": "Minecraftdo",
+  "genreId": 5,
+  "price": 19.99,
+  "releaseDate": "2011-11-18"
+}
+###
+POST  http://localhost:5129/games
+Content-Type: application/json
+
+{
+  "name": "Moon",
+  "genreId": 2,
+  "price": 99.99,
+  "releaseDate": "2022-01-22"
+}
+
+### 
+PUT http://localhost:5129/games/3
+Content-Type: application/json
+
+{
+  "name": "Gambling",
+  "genreId": 2,
+  "price": 55.99,
+  "releaseDate": "2011-11-18"
+}
+
+###
+DELETE http://localhost:5129/games/1
